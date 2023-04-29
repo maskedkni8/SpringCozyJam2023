@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include "CoreMinimal.h"
@@ -15,7 +14,8 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "EggPedestal")
 		bool bPedestalActive;
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "EggPedestal")
+		FName CheckTag;
 	
 
 protected:
@@ -30,4 +30,6 @@ private:
 
 	UPROPERTY(EditAnywhere)
 		class UBoxComponent* TriggerBox;
+
+	
 };
